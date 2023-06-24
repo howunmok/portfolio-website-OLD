@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benny's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c65b6d3d7b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" alt="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>Hi, I'm <span> Benny Mok </span></h1>
+          <h2>And I'm <span>Front-end Developer</span></h2>
+            <p>A passionate Front-end Developer <br>based in Toronto, Canada</br>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!--about-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/profilePic3.png" alt="about image" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a software engineering enthusiast specializing in web development, 
+              having recently completed the Diploma of Software Engineering Technician program. With a focus on HTML, CSS, JavaScript, and Angular, 
+              I excel in problem-solving and thrive in collaborative team environments.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onmouseover="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onmouseover="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onmouseover="opentab('education')">
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span>
+                  <br><br>
+                  <table>
+                    <tr>
+                      <td><img src="icons/html-5.png" alt=""></td>
+                      <td><img src="icons/css-3.png" alt=""></td>
+                      <td><img src="icons/js.png" alt=""></td>
+                      <td><img src="icons/bootstrap.png" alt=""></td>
+                      <td><img src="icons/angular.png" alt=""></td>
+                    </tr>
+                    <tr>
+                      <td>HTML5</td>
+                      <td>CSS3 </td>
+                      <td>JavaScript </td>
+                      <td>Bootstrap</td>
+                      <td>Angular</td>
+                    </tr>
+                  </table>
+                <li><span>Programming Language</span>
+                  <br><br>
+                  <table>
+                    <tr>
+                      <td><img src="icons/c-sharp.png" alt=""></td>
+                      <td><img src="icons/java.png" alt=""></td>
+                      <td><img src="icons/python.png" alt=""></td>
+                    </tr>
+                    <tr>
+                      <td>C#</td>
+                      <td>Java</td>
+                      <td>Python</td>
+                    </tr>
+                  </table>
+                <li><span>Others</span>
+                  <br><br>
+                  <table>
+                    <tr>
+                      <td><img src="icons/sql-server.png" alt=""></td>
+                      <td><img src="icons/mongodb2.png" alt=""></td>
+                    </tr>
+                    <tr>
+                      <td>Database <small>(MySQL, PL/SQL)</small></td>
+                      <td>MongoDB</td>
+                    </tr>
+                  </table>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2023/6 - 2023/6</span>
+                  <br /><strong>Ballot Officer</strong>
+                  <br>Toronto Elections, Canada</li>
+                <li><span>2017/2 - 2021/5</span>
+                  <br /><strong>Senior Foreman</strong>
+                  <br>Food and Environmental Hygiene Department, 
+                  <br>Civil Service, Hong Kong</li>
+                <li><span>2013/2 - 2014/3</span><br />Experience 3</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2016</span><br />Education 1</li>
+                <li><span>2015</span><br />Education 2</li>
+                <li><span>2014</span><br />Education 3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--services-->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              itaque saepe explicabo quidem nesciunt error quam quis perferendis
+              id labore amet voluptatum ullam illum minima, dolorum praesentium
+              minus quia voluptate.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              itaque saepe explicabo quidem nesciunt error quam quis perferendis
+              id labore amet voluptatum ullam illum minima, dolorum praesentium
+              minus quia voluptate.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              itaque saepe explicabo quidem nesciunt error quam quis perferendis
+              id labore amet voluptatum ullam illum minima, dolorum praesentium
+              minus quia voluptate.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--portfolio-->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/webdeve.jpg" alt="Web Development" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+                enim obcaecati expedita amet praesentium adipisci quo dolorem at
+                libero. Sequi cupiditate debitis maxime soluta dignissimos
+                obcaecati voluptatum provident, tempora eveniet?
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/programming.jpg" alt="Programming" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+                enim obcaecati expedita amet praesentium adipisci quo dolorem at
+                libero. Sequi cupiditate debitis maxime soluta dignissimos
+                obcaecati voluptatum provident, tempora eveniet?
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/mobileapp.jpg" alt="App Development" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+                enim obcaecati expedita amet praesentium adipisci quo dolorem at
+                libero. Sequi cupiditate debitis maxime soluta dignissimos
+                obcaecati voluptatum provident, tempora eveniet?
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!--Contact-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> bennymok@protonmail.com
+            </p>
+            <p><i class="fa-solid fa-phone-volume"></i> 647-861-8497</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a
+              href="documents/Resume(general) - Ho Wun Mok.pdf"
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <!--<form name="submit-to-google-sheet">-->
+            <form
+              action="https://formsubmit.co/b4a767d8c31db1e0517b0c0c504e85bd"
+              method="POST"
+            >
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          <i class="fa-solid fa-laptop-code"></i> Copyright &copy; Benny
+          <i class="fa-solid fa-laptop-code"></i>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <!--
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwg4tdVNzHzrP_ziKfGmy2NFx1vz1UuAuDVRXgGq0H1G051fIlikSmqeKp7p0H-oL6N/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    -->
+  </body>
+</html>
